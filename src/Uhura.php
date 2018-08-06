@@ -66,6 +66,11 @@ class Uhura
         return $this->http;
     }
 
+    public function setHttp($client)
+    {
+        return $this->http = $client;
+    }
+
     public function get($queryParams = [])
     {
         return $this->request('GET', $queryParams);
